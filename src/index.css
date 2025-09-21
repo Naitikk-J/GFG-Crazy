@@ -143,9 +143,11 @@ All colors MUST be HSL.
   writing-mode: vertical-rl;
   color: white;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 700;
   letter-spacing: 8px;
-  opacity: 0.7;
+  opacity: 0.8;
+  font-family: 'Inter', sans-serif;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 .hero-content {
@@ -156,12 +158,13 @@ All colors MUST be HSL.
   z-index: 5;
   text-align: center;
   color: white;
+  font-family: 'Inter', sans-serif;
 }
 
 .hero-title {
   font-size: clamp(4rem, 10vw, 12rem);
-  font-weight: 100;
-  letter-spacing: 0.2em;
+  font-weight: 900;
+  letter-spacing: 0.1em;
   margin: 0;
   line-height: 0.9;
   background: linear-gradient(45deg, #fff, #00ff88, #0099ff);
@@ -170,6 +173,7 @@ All colors MUST be HSL.
   -webkit-text-fill-color: transparent;
   background-clip: text;
   animation: gradient-shift 8s ease-in-out infinite;
+  text-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
 }
 
 @keyframes gradient-shift {
@@ -179,11 +183,13 @@ All colors MUST be HSL.
 
 .hero-subtitle {
   margin-top: 2rem;
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  font-weight: 300;
-  letter-spacing: 0.1em;
-  opacity: 0.8;
-  line-height: 1.6;
+  font-size: clamp(1.1rem, 2.2vw, 1.8rem);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  opacity: 0.9;
+  line-height: 1.4;
+  font-family: 'Inter', sans-serif;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
 .subtitle-line {
@@ -247,6 +253,17 @@ All colors MUST be HSL.
   text-align: center;
   color: white;
   padding: 0 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.content-section .hero-title {
+  font-weight: 800;
+  text-shadow: 0 0 40px rgba(0, 255, 136, 0.4);
+}
+
+.content-section .hero-subtitle {
+  font-weight: 500;
+  opacity: 0.95;
 }
 
 .title-char {
