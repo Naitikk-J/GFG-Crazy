@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { gsap } from 'gsap';
+import gfgLogo from '@/assets/gfg-logo.png';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
@@ -566,6 +567,11 @@ export const Component = () => {
   return (
     <div ref={containerRef} className="hero-container cosmos-style">
       <canvas ref={canvasRef} className="hero-canvas" />
+      
+      {/* GFG Logo - Fixed top left */}
+      <div className="gfg-logo">
+        <img src={gfgLogo} alt="GeeksforGeeks" />
+      </div>
       
       {/* Side menu */}
       <div ref={menuRef} className="side-menu" style={{ visibility: 'hidden' }}>
