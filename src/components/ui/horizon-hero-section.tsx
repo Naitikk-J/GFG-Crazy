@@ -586,7 +586,7 @@ export const Component = () => {
       {/* Main content */}
       <div className="hero-content cosmos-content">
         <h1 ref={titleRef} className="hero-title">
-          GEEKSFORGEEKS
+          {splitTitle('GEEKSFORGEEKS')}
         </h1>
         
         <div ref={subtitleRef} className="hero-subtitle cosmos-subtitle">
@@ -639,8 +639,8 @@ export const Component = () => {
           
           return (
             <section key={i} className="content-section">
-              <h1 ref={titleRef} className="hero-title">
-                {titles[i+1] || 'DEFAULT'}
+              <h1 className="hero-title">
+                {splitTitle(titles[i+1] || 'DEFAULT')}
               </h1>
           
               <div ref={subtitleRef} className="hero-subtitle cosmos-subtitle">
